@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Change Text Example</title>
+    <style>
+        .container {
+            display: flex;
+            font-family: Tahoma;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 300px;
+        }
+        .box {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="textBox" class="box">Click the button to change this text!</div>
+    <button class="button" onclick="changeText()">Change Text</button>
+</div>
+
+<script>
+    function changeText() {
+        document.getElementById("textBox").textContent = "Text has been changed";
+    }
+</script>
+
+</body>
+</html>
